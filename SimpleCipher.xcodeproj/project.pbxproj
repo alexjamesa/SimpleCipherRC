@@ -87,10 +87,8 @@
 				B79E996B1BB865D500E9D6BD /* LaunchScreen.storyboard */,
 				B79E99821BB8668900E9D6BD /* AppDelegate.swift */,
 				B79E99831BB8668900E9D6BD /* Dynamic.swift */,
-				B79E99841BB8668900E9D6BD /* SimpleCipherModel.swift */,
 				B79E998C1BB8678E00E9D6BD /* Main.storyboard */,
-				B79E99851BB8668900E9D6BD /* SimpleCipherViewController.swift */,
-				B79E99861BB8668900E9D6BD /* SimpleCipherViewModel.swift */,
+				B79E998E1BB86B5000E9D6BD /* SimpleCipherMVVM */,
 				B79E996E1BB865D500E9D6BD /* Info.plist */,
 			);
 			path = SimpleCipher;
@@ -103,6 +101,16 @@
 				B79E99791BB865D500E9D6BD /* Info.plist */,
 			);
 			path = SimpleCipherTests;
+			sourceTree = "<group>";
+		};
+		B79E998E1BB86B5000E9D6BD /* SimpleCipherMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				B79E99841BB8668900E9D6BD /* SimpleCipherModel.swift */,
+				B79E99851BB8668900E9D6BD /* SimpleCipherViewController.swift */,
+				B79E99861BB8668900E9D6BD /* SimpleCipherViewModel.swift */,
+			);
+			name = SimpleCipherMVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

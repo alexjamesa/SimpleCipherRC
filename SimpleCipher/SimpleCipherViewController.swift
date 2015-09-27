@@ -15,6 +15,8 @@ class SimpleCipherViewController: UIViewController {
     
     var viewModel:SimpleCipherViewModel? {
         didSet{
+            
+            // Subscribe to updates from viewModel about cipherText's value
             viewModel!.cipherText.bindAndFire{
                 [unowned self] in
                 if self.cipherTextField != nil{
@@ -25,22 +27,9 @@ class SimpleCipherViewController: UIViewController {
     }
     
     @IBAction func textValueChanged(sender: UITextField) {
+        // Update viewModel when original text changed
         self.viewModel?.originalText=sender.text;
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    
-
 }
 
 

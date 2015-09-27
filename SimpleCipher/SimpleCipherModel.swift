@@ -10,11 +10,9 @@ import Foundation
 
 class SimpleCipherModel{
     
-    // WHEN INPUT RECEIVED, UPDATE OUTPUT
     var originalText:String?{
-        didSet{
-            cipherText.value=SimpleCipherModel.cipherForString(originalText)
-        }
+        // When new original text received, cipher it!
+        didSet{cipherText.value=SimpleCipherModel.cipherForString(originalText)}
     }
     var cipherText:Dynamic<String?>
     
@@ -22,7 +20,8 @@ class SimpleCipherModel{
         self.cipherText=Dynamic("")
         self.originalText=""
     }
-    
+
+    // This is a mock implementation of the ciphering code. (To the mock code's credit, the cipher is entirely undecipherable.)
     class func cipherForString(originalText:String?)->String?{
         if let text = originalText where text != ""{
             return "4!3thX8$Ao"

@@ -1,3 +1,5 @@
+// From http://rasic.info/bindings-generics-swift-and-mvvm/
+
 class Dynamic<T> {
     typealias Listener = T -> Void
     var listener: Listener?

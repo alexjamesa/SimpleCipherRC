@@ -10,18 +10,18 @@ import Foundation
 
 class SimpleCipherViewModel{
     
-    var originalText:String?{
-        didSet{
-            self.model.originalText=originalText
-        }
-    }
     var cipherText:Dynamic<String?>=Dynamic("")
     let model:SimpleCipherModel
+    
+    var originalText:String?{
+        // Update model when original text changed
+        didSet{self.model.originalText=originalText}
+    }
     
     init(model:SimpleCipherModel){
         self.model=model
         
-        // Bind cipher variable to model's value
+        // Subscribe to updates from model about cipherText's value
         model.cipherText.bindAndFire{
             [unowned self] in
             self.cipherText.value = $0
