@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B79E99631BB865D500E9D6BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E99621BB865D500E9D6BD /* AppDelegate.swift */; };
-		B79E99651BB865D500E9D6BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E99641BB865D500E9D6BD /* ViewController.swift */; };
-		B79E99681BB865D500E9D6BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79E99661BB865D500E9D6BD /* Main.storyboard */; };
 		B79E996A1BB865D500E9D6BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79E99691BB865D500E9D6BD /* Assets.xcassets */; };
 		B79E996D1BB865D500E9D6BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79E996B1BB865D500E9D6BD /* LaunchScreen.storyboard */; };
 		B79E99781BB865D500E9D6BD /* SimpleCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E99771BB865D500E9D6BD /* SimpleCipherTests.swift */; };
+		B79E99871BB8668900E9D6BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E99821BB8668900E9D6BD /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		B79E99881BB8668900E9D6BD /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E99831BB8668900E9D6BD /* Dynamic.swift */; settings = {ASSET_TAGS = (); }; };
+		B79E99891BB8668900E9D6BD /* SimpleCipherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E99841BB8668900E9D6BD /* SimpleCipherModel.swift */; settings = {ASSET_TAGS = (); }; };
+		B79E998A1BB8668900E9D6BD /* SimpleCipherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E99851BB8668900E9D6BD /* SimpleCipherViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B79E998B1BB8668900E9D6BD /* SimpleCipherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E99861BB8668900E9D6BD /* SimpleCipherViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		B79E998D1BB8678E00E9D6BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79E998C1BB8678E00E9D6BD /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,15 +30,18 @@
 
 /* Begin PBXFileReference section */
 		B79E995F1BB865D500E9D6BD /* SimpleCipher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCipher.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B79E99621BB865D500E9D6BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B79E99641BB865D500E9D6BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B79E99671BB865D500E9D6BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B79E99691BB865D500E9D6BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B79E996C1BB865D500E9D6BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B79E996E1BB865D500E9D6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B79E99731BB865D500E9D6BD /* SimpleCipherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCipherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79E99771BB865D500E9D6BD /* SimpleCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCipherTests.swift; sourceTree = "<group>"; };
 		B79E99791BB865D500E9D6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B79E99821BB8668900E9D6BD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B79E99831BB8668900E9D6BD /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		B79E99841BB8668900E9D6BD /* SimpleCipherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCipherModel.swift; sourceTree = "<group>"; };
+		B79E99851BB8668900E9D6BD /* SimpleCipherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCipherViewController.swift; sourceTree = "<group>"; };
+		B79E99861BB8668900E9D6BD /* SimpleCipherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCipherViewModel.swift; sourceTree = "<group>"; };
+		B79E998C1BB8678E00E9D6BD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +83,14 @@
 		B79E99611BB865D500E9D6BD /* SimpleCipher */ = {
 			isa = PBXGroup;
 			children = (
-				B79E99621BB865D500E9D6BD /* AppDelegate.swift */,
-				B79E99641BB865D500E9D6BD /* ViewController.swift */,
-				B79E99661BB865D500E9D6BD /* Main.storyboard */,
 				B79E99691BB865D500E9D6BD /* Assets.xcassets */,
 				B79E996B1BB865D500E9D6BD /* LaunchScreen.storyboard */,
+				B79E99821BB8668900E9D6BD /* AppDelegate.swift */,
+				B79E99831BB8668900E9D6BD /* Dynamic.swift */,
+				B79E99841BB8668900E9D6BD /* SimpleCipherModel.swift */,
+				B79E998C1BB8678E00E9D6BD /* Main.storyboard */,
+				B79E99851BB8668900E9D6BD /* SimpleCipherViewController.swift */,
+				B79E99861BB8668900E9D6BD /* SimpleCipherViewModel.swift */,
 				B79E996E1BB865D500E9D6BD /* Info.plist */,
 			);
 			path = SimpleCipher;
@@ -140,6 +149,7 @@
 		B79E99571BB865D500E9D6BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ten Kettles Inc.";
 				TargetAttributes = {
@@ -176,9 +186,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B79E998D1BB8678E00E9D6BD /* Main.storyboard in Resources */,
 				B79E996D1BB865D500E9D6BD /* LaunchScreen.storyboard in Resources */,
 				B79E996A1BB865D500E9D6BD /* Assets.xcassets in Resources */,
-				B79E99681BB865D500E9D6BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B79E99651BB865D500E9D6BD /* ViewController.swift in Sources */,
-				B79E99631BB865D500E9D6BD /* AppDelegate.swift in Sources */,
+				B79E998B1BB8668900E9D6BD /* SimpleCipherViewModel.swift in Sources */,
+				B79E99871BB8668900E9D6BD /* AppDelegate.swift in Sources */,
+				B79E99881BB8668900E9D6BD /* Dynamic.swift in Sources */,
+				B79E998A1BB8668900E9D6BD /* SimpleCipherViewController.swift in Sources */,
+				B79E99891BB8668900E9D6BD /* SimpleCipherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,14 +233,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B79E99661BB865D500E9D6BD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B79E99671BB865D500E9D6BD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B79E996B1BB865D500E9D6BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -326,10 +331,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SimpleCipher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenkettles.SimpleCipher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -337,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SimpleCipher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenkettles.SimpleCipher;
