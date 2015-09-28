@@ -4,7 +4,7 @@
 //
 //  Created by U3 on 2015-09-27.
 //  Copyright © 2015 Ten Kettles Inc. All rights reserved.
-//
+// 
 
 import XCTest
 @testable import SimpleCipher
