@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B79E996A1BB865D500E9D6BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79E99691BB865D500E9D6BD /* Assets.xcassets */; };
+		B79E996D1BB865D500E9D6BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79E996B1BB865D500E9D6BD /* LaunchScreen.storyboard */; };
+		B79E99871BB8668900E9D6BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E99821BB8668900E9D6BD /* AppDelegate.swift */; };
+		B79E99891BB8668900E9D6BD /* SimpleCipherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E99841BB8668900E9D6BD /* SimpleCipherModel.swift */; };
+		B79E998A1BB8668900E9D6BD /* SimpleCipherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E99851BB8668900E9D6BD /* SimpleCipherViewController.swift */; };
+		B79E998B1BB8668900E9D6BD /* SimpleCipherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E99861BB8668900E9D6BD /* SimpleCipherViewModel.swift */; };
+		B79E998D1BB8678E00E9D6BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79E998C1BB8678E00E9D6BD /* Main.storyboard */; };
+		B7A8EC031BE5065F00E0CD18 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A8EBE31BE5062600E0CD18 /* Result.framework */; };
+		B7A8EC041BE5065F00E0CD18 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7A8EBE31BE5062600E0CD18 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B7A8EC071BE5065F00E0CD18 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A8EBFC1BE5062E00E0CD18 /* ReactiveCocoa.framework */; };
+		B7A8EC081BE5065F00E0CD18 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7A8EBFC1BE5062E00E0CD18 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B7A8EC131BE50E3800E0CD18 /* SimpleCipherRCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8EC121BE50E3800E0CD18 /* SimpleCipherRCTests.swift */; };
+		B7E138F61BFCA5110098C73F /* RAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E138F51BFCA5110098C73F /* RAC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7A8EBDE1BE5062600E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBD31BE5062600E0CD18 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480571A9572F5009D7229;
+			remoteInfo = "Result-Mac";
+		};
+		B7A8EBE01BE5062600E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBD31BE5062600E0CD18 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480671A9572F5009D7229;
+			remoteInfo = "Result-MacTests";
+		};
+		B7A8EBE21BE5062600E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBD31BE5062600E0CD18 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D454807D1A957361009D7229;
+			remoteInfo = "Result-iOS";
+		};
+		B7A8EBE41BE5062600E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBD31BE5062600E0CD18 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480871A957362009D7229;
+			remoteInfo = "Result-iOSTests";
+		};
+		B7A8EBE61BE5062600E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBD31BE5062600E0CD18 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57FCDE471BA280DC00130C48;
+			remoteInfo = "Result-tvOS";
+		};
+		B7A8EBE81BE5062600E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBD31BE5062600E0CD18 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57FCDE541BA280E000130C48;
+			remoteInfo = "Result-tvOSTests";
+		};
+		B7A8EBEA1BE5062600E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBD31BE5062600E0CD18 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D03579A31B2B788F005D26AE;
+			remoteInfo = "Result-watchOS";
+		};
+		B7A8EBEC1BE5062600E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBD31BE5062600E0CD18 /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D03579B01B2B78A1005D26AE;
+			remoteInfo = "Result-watchOSTests";
+		};
+		B7A8EBF71BE5062E00E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBEE1BE5062E00E0CD18 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725EA19E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-Mac";
+		};
+		B7A8EBF91BE5062E00E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBEE1BE5062E00E0CD18 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725F519E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-MacTests";
+		};
+		B7A8EBFB1BE5062E00E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBEE1BE5062E00E0CD18 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047260C19E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		B7A8EBFD1BE5062E00E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBEE1BE5062E00E0CD18 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047261619E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOSTests";
+		};
+		B7A8EBFF1BE5062E00E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBEE1BE5062E00E0CD18 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9B315541B3940610001CB9C;
+			remoteInfo = "ReactiveCocoa-watchOS";
+		};
+		B7A8EC011BE5062E00E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBEE1BE5062E00E0CD18 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57A4D2411BA13D7A00F7D4B1;
+			remoteInfo = "ReactiveCocoa-tvOS";
+		};
+		B7A8EC051BE5065F00E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBD31BE5062600E0CD18 /* Result.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D454807C1A957361009D7229;
+			remoteInfo = "Result-iOS";
+		};
+		B7A8EC091BE5065F00E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A8EBEE1BE5062E00E0CD18 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D047260B19E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		B7A8EC151BE50E3800E0CD18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B79E99571BB865D500E9D6BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B79E995E1BB865D500E9D6BD;
+			remoteInfo = SimpleCipherRC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B7A8EC0B1BE5065F00E0CD18 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B7A8EC041BE5065F00E0CD18 /* Result.framework in Embed Frameworks */,
+				B7A8EC081BE5065F00E0CD18 /* ReactiveCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B79E995F1BB865D500E9D6BD /* SimpleCipherRC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCipherRC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79E99691BB865D500E9D6BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B79E996C1BB865D500E9D6BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B79E996E1BB865D500E9D6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B79E99821BB8668900E9D6BD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B79E99841BB8668900E9D6BD /* SimpleCipherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCipherModel.swift; sourceTree = "<group>"; };
+		B79E99851BB8668900E9D6BD /* SimpleCipherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCipherViewController.swift; sourceTree = "<group>"; };
+		B79E99861BB8668900E9D6BD /* SimpleCipherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCipherViewModel.swift; sourceTree = "<group>"; };
+		B79E998C1BB8678E00E9D6BD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B7A8EBD31BE5062600E0CD18 /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = ReactiveCocoa/Carthage/Checkouts/Result/Result.xcodeproj; sourceTree = "<group>"; };
+		B7A8EBEE1BE5062E00E0CD18 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = ReactiveCocoa/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
+		B7A8EC101BE50E3800E0CD18 /* SimpleCipherRCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCipherRCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A8EC121BE50E3800E0CD18 /* SimpleCipherRCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCipherRCTests.swift; sourceTree = "<group>"; };
+		B7A8EC141BE50E3800E0CD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7E138F51BFCA5110098C73F /* RAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B79E995C1BB865D500E9D6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A8EC031BE5065F00E0CD18 /* Result.framework in Frameworks */,
+				B7A8EC071BE5065F00E0CD18 /* ReactiveCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7A8EC0D1BE50E3800E0CD18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B79E99561BB865D500E9D6BD = {
+			isa = PBXGroup;
+			children = (
+				B7A8EBD31BE5062600E0CD18 /* Result.xcodeproj */,
+				B7A8EBEE1BE5062E00E0CD18 /* ReactiveCocoa.xcodeproj */,
+				B79E99611BB865D500E9D6BD /* SimpleCipherRC */,
+				B7A8EC111BE50E3800E0CD18 /* SimpleCipherRCTests */,
+				B79E99601BB865D500E9D6BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B79E99601BB865D500E9D6BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B79E995F1BB865D500E9D6BD /* SimpleCipherRC.app */,
+				B7A8EC101BE50E3800E0CD18 /* SimpleCipherRCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B79E99611BB865D500E9D6BD /* SimpleCipherRC */ = {
+			isa = PBXGroup;
+			children = (
+				B79E99691BB865D500E9D6BD /* Assets.xcassets */,
+				B79E996B1BB865D500E9D6BD /* LaunchScreen.storyboard */,
+				B79E99821BB8668900E9D6BD /* AppDelegate.swift */,
+				B79E998C1BB8678E00E9D6BD /* Main.storyboard */,
+				B7E138F51BFCA5110098C73F /* RAC.swift */,
+				B79E998E1BB86B5000E9D6BD /* SimpleCipherMVVM */,
+				B79E996E1BB865D500E9D6BD /* Info.plist */,
+			);
+			path = SimpleCipherRC;
+			sourceTree = "<group>";
+		};
+		B79E998E1BB86B5000E9D6BD /* SimpleCipherMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				B79E99841BB8668900E9D6BD /* SimpleCipherModel.swift */,
+				B79E99861BB8668900E9D6BD /* SimpleCipherViewModel.swift */,
+				B79E99851BB8668900E9D6BD /* SimpleCipherViewController.swift */,
+			);
+			name = SimpleCipherMVVM;
+			sourceTree = "<group>";
+		};
+		B7A8EBD41BE5062600E0CD18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7A8EBDF1BE5062600E0CD18 /* Result.framework */,
+				B7A8EBE11BE5062600E0CD18 /* Result-MacTests.xctest */,
+				B7A8EBE31BE5062600E0CD18 /* Result.framework */,
+				B7A8EBE51BE5062600E0CD18 /* Result-iOSTests.xctest */,
+				B7A8EBE71BE5062600E0CD18 /* Result.framework */,
+				B7A8EBE91BE5062600E0CD18 /* Result-tvOSTests.xctest */,
+				B7A8EBEB1BE5062600E0CD18 /* Result.framework */,
+				B7A8EBED1BE5062600E0CD18 /* Result-watchOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7A8EBEF1BE5062E00E0CD18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7A8EBF81BE5062E00E0CD18 /* ReactiveCocoa.framework */,
+				B7A8EBFA1BE5062E00E0CD18 /* ReactiveCocoaTests.xctest */,
+				B7A8EBFC1BE5062E00E0CD18 /* ReactiveCocoa.framework */,
+				B7A8EBFE1BE5062E00E0CD18 /* ReactiveCocoaTests.xctest */,
+				B7A8EC001BE5062E00E0CD18 /* ReactiveCocoa.framework */,
+				B7A8EC021BE5062E00E0CD18 /* ReactiveCocoa.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7A8EC111BE50E3800E0CD18 /* SimpleCipherRCTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7A8EC121BE50E3800E0CD18 /* SimpleCipherRCTests.swift */,
+				B7A8EC141BE50E3800E0CD18 /* Info.plist */,
+			);
+			path = SimpleCipherRCTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B79E995E1BB865D500E9D6BD /* SimpleCipherRC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B79E997C1BB865D500E9D6BD /* Build configuration list for PBXNativeTarget "SimpleCipherRC" */;
+			buildPhases = (
+				B79E995B1BB865D500E9D6BD /* Sources */,
+				B79E995C1BB865D500E9D6BD /* Frameworks */,
+				B79E995D1BB865D500E9D6BD /* Resources */,
+				B7A8EC0B1BE5065F00E0CD18 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7A8EC061BE5065F00E0CD18 /* PBXTargetDependency */,
+				B7A8EC0A1BE5065F00E0CD18 /* PBXTargetDependency */,
+			);
+			name = SimpleCipherRC;
+			productName = SimpleCipher;
+			productReference = B79E995F1BB865D500E9D6BD /* SimpleCipherRC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7A8EC0F1BE50E3800E0CD18 /* SimpleCipherRCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7A8EC171BE50E3800E0CD18 /* Build configuration list for PBXNativeTarget "SimpleCipherRCTests" */;
+			buildPhases = (
+				B7A8EC0C1BE50E3800E0CD18 /* Sources */,
+				B7A8EC0D1BE50E3800E0CD18 /* Frameworks */,
+				B7A8EC0E1BE50E3800E0CD18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7A8EC161BE50E3800E0CD18 /* PBXTargetDependency */,
+			);
+			name = SimpleCipherRCTests;
+			productName = SimpleCipherRCTests;
+			productReference = B7A8EC101BE50E3800E0CD18 /* SimpleCipherRCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B79E99571BB865D500E9D6BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Ten Kettles Inc.";
+				TargetAttributes = {
+					B79E995E1BB865D500E9D6BD = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					B7A8EC0F1BE50E3800E0CD18 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = B79E995E1BB865D500E9D6BD;
+					};
+				};
+			};
+			buildConfigurationList = B79E995A1BB865D500E9D6BD /* Build configuration list for PBXProject "SimpleCipherRC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B79E99561BB865D500E9D6BD;
+			productRefGroup = B79E99601BB865D500E9D6BD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B7A8EBEF1BE5062E00E0CD18 /* Products */;
+					ProjectRef = B7A8EBEE1BE5062E00E0CD18 /* ReactiveCocoa.xcodeproj */;
+				},
+				{
+					ProductGroup = B7A8EBD41BE5062600E0CD18 /* Products */;
+					ProjectRef = B7A8EBD31BE5062600E0CD18 /* Result.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B79E995E1BB865D500E9D6BD /* SimpleCipherRC */,
+				B7A8EC0F1BE50E3800E0CD18 /* SimpleCipherRCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B7A8EBDF1BE5062600E0CD18 /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = B7A8EBDE1BE5062600E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7A8EBE11BE5062600E0CD18 /* Result-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-MacTests.xctest";
+			remoteRef = B7A8EBE01BE5062600E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7A8EBE31BE5062600E0CD18 /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = B7A8EBE21BE5062600E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7A8EBE51BE5062600E0CD18 /* Result-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-iOSTests.xctest";
+			remoteRef = B7A8EBE41BE5062600E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7A8EBE71BE5062600E0CD18 /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = B7A8EBE61BE5062600E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7A8EBE91BE5062600E0CD18 /* Result-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-tvOSTests.xctest";
+			remoteRef = B7A8EBE81BE5062600E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7A8EBEB1BE5062600E0CD18 /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = B7A8EBEA1BE5062600E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7A8EBED1BE5062600E0CD18 /* Result-watchOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-watchOSTests.xctest";
+			remoteRef = B7A8EBEC1BE5062600E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7A8EBF81BE5062E00E0CD18 /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = B7A8EBF71BE5062E00E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7A8EBFA1BE5062E00E0CD18 /* ReactiveCocoaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveCocoaTests.xctest;
+			remoteRef = B7A8EBF91BE5062E00E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7A8EBFC1BE5062E00E0CD18 /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = B7A8EBFB1BE5062E00E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7A8EBFE1BE5062E00E0CD18 /* ReactiveCocoaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveCocoaTests.xctest;
+			remoteRef = B7A8EBFD1BE5062E00E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7A8EC001BE5062E00E0CD18 /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = B7A8EBFF1BE5062E00E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B7A8EC021BE5062E00E0CD18 /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = B7A8EC011BE5062E00E0CD18 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B79E995D1BB865D500E9D6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B79E998D1BB8678E00E9D6BD /* Main.storyboard in Resources */,
+				B79E996D1BB865D500E9D6BD /* LaunchScreen.storyboard in Resources */,
+				B79E996A1BB865D500E9D6BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7A8EC0E1BE50E3800E0CD18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B79E995B1BB865D500E9D6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E138F61BFCA5110098C73F /* RAC.swift in Sources */,
+				B79E998B1BB8668900E9D6BD /* SimpleCipherViewModel.swift in Sources */,
+				B79E99871BB8668900E9D6BD /* AppDelegate.swift in Sources */,
+				B79E998A1BB8668900E9D6BD /* SimpleCipherViewController.swift in Sources */,
+				B79E99891BB8668900E9D6BD /* SimpleCipherModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7A8EC0C1BE50E3800E0CD18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A8EC131BE50E3800E0CD18 /* SimpleCipherRCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7A8EC061BE5065F00E0CD18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Result-iOS";
+			targetProxy = B7A8EC051BE5065F00E0CD18 /* PBXContainerItemProxy */;
+		};
+		B7A8EC0A1BE5065F00E0CD18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReactiveCocoa-iOS";
+			targetProxy = B7A8EC091BE5065F00E0CD18 /* PBXContainerItemProxy */;
+		};
+		B7A8EC161BE50E3800E0CD18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B79E995E1BB865D500E9D6BD /* SimpleCipherRC */;
+			targetProxy = B7A8EC151BE50E3800E0CD18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B79E996B1BB865D500E9D6BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B79E996C1BB865D500E9D6BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B79E997A1BB865D500E9D6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B79E997B1BB865D500E9D6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B79E997D1BB865D500E9D6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SimpleCipherRC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tenkettles.SimpleCipherRC;
+				PRODUCT_NAME = SimpleCipherRC;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B79E997E1BB865D500E9D6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SimpleCipherRC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tenkettles.SimpleCipherRC;
+				PRODUCT_NAME = SimpleCipherRC;
+			};
+			name = Release;
+		};
+		B7A8EC181BE50E3800E0CD18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleCipherRCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tenkettles.SimpleCipherRCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleCipherRC.app/SimpleCipherRC";
+			};
+			name = Debug;
+		};
+		B7A8EC191BE50E3800E0CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleCipherRCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tenkettles.SimpleCipherRCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleCipherRC.app/SimpleCipherRC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B79E995A1BB865D500E9D6BD /* Build configuration list for PBXProject "SimpleCipherRC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B79E997A1BB865D500E9D6BD /* Debug */,
+				B79E997B1BB865D500E9D6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B79E997C1BB865D500E9D6BD /* Build configuration list for PBXNativeTarget "SimpleCipherRC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B79E997D1BB865D500E9D6BD /* Debug */,
+				B79E997E1BB865D500E9D6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7A8EC171BE50E3800E0CD18 /* Build configuration list for PBXNativeTarget "SimpleCipherRCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7A8EC181BE50E3800E0CD18 /* Debug */,
+				B7A8EC191BE50E3800E0CD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B79E99571BB865D500E9D6BD /* Project object */;
+}

@@ -1,12 +1,5 @@
-//
-//  SimpleCipherModel.swift
-//  SimpleCipher
-//
-//  Created by U3 on 2015-09-26.
-//  Copyright © 2015 Ten Kettles Inc. All rights reserved.
-//
-
 import Foundation
+import ReactiveCocoa
 
 class SimpleCipherModel{
     
@@ -14,20 +7,16 @@ class SimpleCipherModel{
         // When new original text received, cipher it!
         didSet{cipherText.value=SimpleCipherModel.cipherForString(originalText)}
     }
-    var cipherText:Dynamic<String?>
-    static let mockCipher="4!3thX8$Ao"
     
-    init(){
-        self.cipherText=Dynamic("")
-        self.originalText=""
-    }
+    var cipherText=MutableProperty<String>("")
+    static let mockCipher="4!3thX8$Ao"
 
     // This is a mock implementation of the ciphering code. (To the mock code's credit, the cipher is entirely undecipherable.)
-    class func cipherForString(originalText:String?)->String?{
+    class func cipherForString(originalText:String?)->String{
         if let text = originalText where text != ""{
             return mockCipher
         }else{
-            return nil
+            return ""
         }
     }
     
