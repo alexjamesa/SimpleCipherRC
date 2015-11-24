@@ -8,7 +8,9 @@ class SimpleCipherViewModel{
 
     var originalText:String?{
         // Update model when original text changed
-        didSet{self.model.originalText=originalText}
+        didSet{
+            self.model.originalText=originalText
+        }
     }
 
     
