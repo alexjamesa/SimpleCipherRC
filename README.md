@@ -1,4 +1,7 @@
-# SimpleCipher
-A super-lean MVVM implementation in Swift (with no 3rd-party stuff)
+# SimpleCipherRC
+A super-lean MVVM implementation in Swift and ReactiveCocoa4
 
-Really excited about bringing MVVM into my apps, so wanted to start with a very simple implementation to get the basics down. Though MVVM in Swift can be paired with Functional Reactive Programming (FRP) tools like ReactiveCocoa and RxSwift, this particular example has no third party dependency. Instead, it implements a technique based on Srdan Rasic's post here: http://rasic.info/bindings-generics-swift-and-mvvm/.
+The original SimpleCipher was a very simple example of MVVM architecture with no 3rd party dependencies [1]. Just Swift. To offer an alternative, this new example project uses ReactiveCocoa 4 to link the Model to ViewModel, and ViewModel to Model. A collection of utility methods from Colin Eberhardt was included, and can also be accessed in their original form at [2].
+
+[1] https://github.com/alexjamesa/SimpleCipher
+[2] https://github.com/ColinEberhardt/ReactiveTwitterSearch/blob/master/ReactiveTwitterSearch/Util/UIKitExtensions.swift
